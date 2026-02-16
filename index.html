@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subramanian's Portfolio</title>
-    <h1>Welcome to Subramanian's Portfolio</h1>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        #main-header {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: large;
+        }
+        h2 {
+            color: #333;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        .card {
+            padding: 15px;
+            border: solid;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        a {
+            color:cornflowerblue;
+        }
+        footer {
+            background-color: aliceblue;
+        }
+    </style>
 </head>
-
 <body>
+    <header id="main-header">
+        <h1>Subramanian Subramanian Mahalingam</h1>
+        <p>Student ID: 2800630</p>
+    </header>
+
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <main>
-        <section>
+        <section class="card" id="about">
             <h2>About Me</h2>
-            <p>Hello, I am Subramanian. I am a 3rd year studying Computer Science at Wits University</p>
-            <p>I am loving it here</p>
+            <p>Write a short paragraph about yourself here. Include your interests, your field of study, and what you hope to achieve in this course.</p>
         </section>
-        <article>
-            <h3>Latest Project</h3>
-            <p>Hoverboard that will revolutionise transport. This will remove all need to use cars thereby reducing carbon immisions by 100%</p>
+
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>Describe a project you have worked on or are currently working on. This could be a personal project, a group assignment, or something you built for fun.</p>
         </article>
     </main>
+
     <footer>
-        © 2026 2800630 | Built with Semantic HTML
+        <p>&copy; 2025 Subramanian. All rights reserved.</p>
     </footer>
 </body>
 </html>
